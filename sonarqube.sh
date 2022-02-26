@@ -35,8 +35,8 @@ sudo yum update -y
   ./sonar.sh start
 
   sudo firewall-cmd --permanent --add-port=9000/tcp
-
+sleep 2ss
   echo "checking the ip address:"
   hostname -i awk '{print$2}'
-
+sleep 2
   echo "type the above ip address followed by ':9000'as the url"
